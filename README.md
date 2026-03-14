@@ -1,90 +1,88 @@
 # PataFeliz Pet Shop - Sistema Web
 
-## Descricao do Projeto
+## Descrição do Projeto
 
-Este repositorio contem o codigo-fonte do site do **PataFeliz Pet Shop**, desenvolvido como projeto da disciplina **Fundamentos de Sistemas Web** - Fase 1.
-
-O sistema e uma plataforma online para um petshop ficticio, desenvolvido utilizando apenas HTML5, sem CSS ou JavaScript (conforme exigido na Fase 1).
+Este repositório contém o código-fonte do site do **PataFeliz Pet Shop**, desenvolvido como projeto da disciplina **Fundamentos de Sistemas Web** - Fase 1.
 
 ---
 
-## Estrutura de Paginas
+## Estrutura de Páginas
 
-| Arquivo          | Descricao                                      |
+| Arquivo          | Descrição                                      |
 |------------------|------------------------------------------------|
-| `index.html`     | Pagina inicial - apresentacao do petshop       |
-| `acessorios.html`| Categoria: Acessorios (cama e brinquedos)      |
-| `racoes.html`    | Categoria: Racoes nao pereciveis               |
+| `index.html`     | Página inicial - apresentação do petshop       |
+| `acessorios.html`| Categoria: Acessórios (cama e brinquedos)      |
+| `racoes.html`    | Categoria: Rações não perecíveis               |
 | `higiene.html`   | Categoria: Higiene e Limpeza                   |
-| `servicos.html`  | Servicos: Banho e Tosa (com/sem tele-busca)    |
-| `contato.html`   | Informacoes de contato e agendamento           |
+| `servicos.html`  | Serviços: Banho e Tosa (com/sem tele-busca)    |
+| `contato.html`   | Informações de contato e agendamento           |
 | `README.md`      | Este arquivo de ajuda                          |
 
 ---
 
 ## Funcionalidades do Sistema
 
-### Pagina Inicial (index.html)
-- Apresentacao do petshop com nome, slogan e informacoes de contato
-- Menu de navegacao para todas as paginas
-- Lista das categorias de produtos e servicos disponiveis
+### Página Inicial (`index.html`)
+- Apresentação do petshop com nome, slogan e informações de contato
+- Menu de navegação para todas as páginas
+- Lista das categorias de produtos e serviços disponíveis
 - Diferenciais do petshop
-- Rodape com informacoes legais e de contato
+- Rodapé com informações legais e de contato
 
-### Pagina de Acessorios (acessorios.html)
-- Exibe 2 produtos da categoria Acessorios:
+### Página de Acessórios (`acessorios.html`)
+- Exibe 2 produtos da categoria Acessórios:
   1. **Cama Pet Confort - Tamanho M** - R$ 89,90
-  2. **Kit Brinquedos Interativos - 5 pecas** - R$ 45,00
-- Cada produto possui: foto, descricao detalhada e valor
+  2. **Kit Brinquedos Interativos - 5 peças** - R$ 45,00
+- Cada produto possui: foto, descrição detalhada e valor
 
-### Pagina de Racoes (racoes.html)
-- Exibe 2 produtos da categoria Racoes:
-  1. **Racao Premium Caes Adultos - 15kg** - R$ 149,90
-  2. **Racao Premium Gatos Castrados - 3kg** - R$ 79,90
-- Cada produto possui: foto, descricao detalhada e valor
+### Página de Rações (`racoes.html`)
+- Exibe 2 produtos da categoria Rações:
+  1. **Ração Premium Cães Adultos - 15kg** - R$ 149,90
+  2. **Ração Premium Gatos Castrados - 3kg** - R$ 79,90
+- Cada produto possui: foto, descrição detalhada e valor
 
-### Pagina de Higiene e Limpeza (higiene.html)
+### Página de Higiene e Limpeza (`higiene.html`)
 - Exibe 2 produtos da categoria Higiene e Limpeza:
-  1. **Tapete Higienico - Pacote 30un** - R$ 54,90
-  2. **Fralda Descartavel Tamanho P - Pacote 12un** - R$ 32,90
-- Cada produto possui: foto, descricao detalhada e valor
+  1. **Tapete Higiênico - Pacote 30un** - R$ 54,90
+  2. **Fralda Descartável Tamanho P - Pacote 12un** - R$ 32,90
+- Cada produto possui: foto, descrição detalhada e valor
 
-### Pagina de Servicos (servicos.html)
-- Exibe os 2 servicos oferecidos pelo petshop:
-  1. **Banho e Tosa sem Tele-busca** - com tabela de precos por porte
-  2. **Banho e Tosa com Tele-busca** - com tabela de precos por porte
-- Cada servico possui: foto, descricao e valores
+### Página de Serviços (`servicos.html`)
+- Exibe os 2 serviços oferecidos pelo petshop:
+  1. **Banho e Tosa sem Tele-busca** - com tabela de preços por porte
+  2. **Banho e Tosa com Tele-busca** - com tabela de preços por porte
+- Cada serviço possui: foto, descrição e valores
 
-### Pagina de Contato (contato.html)
-- Endereco completo do petshop
+### Página de Contato (`contato.html`)
+- Endereço completo do petshop
 - Telefone e WhatsApp
-- E-mail com link clicavel
-- Horario de funcionamento
-- Informacoes sobre agendamento
+- E-mail com link clicável
+- Horário de funcionamento
+- Informações sobre agendamento
 
 ---
 
-## Estrutura de Cada Pagina
+## Estrutura de Cada Página
 
-Todas as paginas seguem o mesmo padrao:
+Todas as páginas seguem o mesmo padrão:
 
-1. **Cabecalho (header):** Nome do petshop, slogan, contato e menu de navegacao
-2. **Corpo (main):** Conteudo especifico da pagina (produtos ou servicos)
-3. **Rodape (footer):** Endereco, contato, menu de navegacao e informacoes de autoria
+1. **Cabeçalho (header):** Nome do petshop, slogan, contato e menu de navegação
+2. **Corpo (main):** Conteúdo específico da página (produtos ou serviços)
+3. **Rodapé (footer):** Endereço, contato, menu de navegação e informações de autoria
 
 ---
 
 ## Tecnologias Utilizadas
 
-- **HTML5** - Linguagem de marcacao para estruturacao das paginas
-- **GitHub** - Repositorio do codigo-fonte
+- **HTML5** - Linguagem de marcação para estruturação das páginas
+- **GitHub** - Repositório do código-fonte
 - **GitHub Pages** - Hospedagem do site na web
 
 ---
 
 ## Autor
 
-Desenvolvido por **Emily Lemos**
-Disciplina: Fundamentos de Sistemas Web
-Instituicao: Pontifícia Universidade Católica do Rio Grande do Sul - PUCRS
+Desenvolvido por **Emily Lemos**  
+Disciplina: Fundamentos de Sistemas Web  
+Instituição: Pontifícia Universidade Católica do Rio Grande do Sul - PUCRS  
 Ano: 2026
