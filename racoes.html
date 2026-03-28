@@ -1,87 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rações - PataFeliz Pet Shop</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PataFeliz Pet Shop - Rações</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Arquivo CSS Personalizado -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>PataFeliz Pet Shop</h1>
-    <p>Tudo o que seu pet precisa, com amor e cuidado!</p>
-    <p>Telefone: (21) 98765-4321 | contato@patafeliz.com.br | Nova Iguaçu - RJ</p>
+    <!-- Cabeçalho -->
+    <header class="container-fluid text-dark">
+        <h1 class="display-4 fw-bold">PataFeliz Pet Shop</h1>
+        <p class="lead">Tudo o que seu pet precisa, com amor e cuidado!</p>
+    </header>
 
-    <nav>
-      <a href="index.html">Início</a> |
-      <a href="acessorios.html">Acessórios</a> |
-      <a href="racoes.html">Rações</a> |
-      <a href="higiene.html">Higiene e Limpeza</a> |
-      <a href="servicos.html">Serviços</a> |
-      <a href="contato.html">Contato</a>
+    <!-- Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="acessorios.html">Acessórios</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="racoes.html">Rações</a></li>
+                    <li class="nav-item"><a class="nav-link" href="higiene.html">Higiene e Limpeza</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <hr>
+    <main class="container my-5">
+        <h2 class="text-center mb-5">Nossas Rações</h2>
 
-  <main>
-    <h2>Rações para Pets</h2>
-    <p>Rações não perecíveis de alta qualidade para a saúde e bem-estar do seu animal!</p>
+        <div class="row g-4 justify-content-center">
+            <!-- Produto 1 -->
+            <div class="col-md-5 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://media.istockphoto.com/id/1138658055/pt/foto/dog-food-bag-package-design-near-red-plastic-bowl-with-dry-food-for-dog-3d-rendering.jpg?s=1024x1024&w=is&k=20&c=bbwLnsIpoy2GhzWsXJYd42BC7t_6MLl-tKffhCe-i84=" class="card-img-top" alt="Saco de ração premium para cães">
+                    <div class="card-body text-center">
+                        <h3 class="card-title h5">Ração Premium Cães Adultos - 15kg</h3>
+                        <p class="card-text text-muted">Nutrição completa e balanceada para cães de todos os portes.</p>
+                        <p class="h4 text-warning fw-bold">R$ 149,90</p>
+                        <button class="btn btn-warning w-100 mt-2">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
 
-    <hr>
+            <!-- Produto 2 -->
+            <div class="col-md-5 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://media.istockphoto.com/id/1935330886/pt/foto/cat-food-isolated-on-white-background-close-up.jpg?s=1024x1024&w=is&k=20&c=noXz2rAPZXVRi6Qhs_FfHFBVv4qnFsKkkOMxfA6AxBY=" class="card-img-top" alt="Gato comendo ração em tigela">
+                    <div class="card-body text-center">
+                        <h3 class="card-title h5">Ração Premium Gatos Castrados - 3kg</h3>
+                        <p class="card-text text-muted">Fórmula especial para controle de peso e saúde urinária.</p>
+                        <p class="h4 text-warning fw-bold">R$ 79,90</p>
+                        <button class="btn btn-warning w-100 mt-2">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-    <section>
-      <h3>Ração Premium Cães Adultos - 25kg</h3>
-      <img src="https://media.istockphoto.com/id/1138658055/pt/foto/dog-food-bag-package-design-near-red-plastic-bowl-with-dry-food-for-dog-3d-rendering.jpg?s=1024x1024&w=is&k=20&c=bbwLnsIpoy2GhzWsXJYd42BC7t_6MLl-tKffhCe-i84=" alt="Foto da Ração Premium para Cães Adultos 25kg" width="300" height="200">
-      <p>
-        <strong>Descrição:</strong> Ração completa e balanceada para cães adultos de todos os portes.
-        Rica em proteínas, vitaminas e minerais essenciais. Fórmula com frango e arroz, sem corantes
-        artificiais. Auxilia na manutenção do peso ideal e saúde pelagem brilhante.
-        Embalagem: 25kg.
-      </p>
-      <p><strong>Valor: R$ 179,90</strong></p>
-    </section>
+    <!-- Rodapé -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-1"><strong>PataFeliz Pet Shop</strong></p>
+            <p class="small">Rua dos Animais, 123 - Nova Iguaçu - RJ | CEP: 26000-000</p>
+            <p class="small">Telefone: (21) 98765-4321 | E-mail: contato@patafeliz.com.br</p>
+            <hr class="bg-light">
+            <p class="small mb-0">&copy; 2026 Desenvolvido por Emily Lemos - PUCRS</p>
+        </div>
+    </footer>
 
-    <hr>
-
-    <section>
-      <h3>Ração Premium Gatos Castrados - 3kg</h3>
-      <img src="https://media.istockphoto.com/id/1935330886/pt/foto/cat-food-isolated-on-white-background-close-up.jpg?s=1024x1024&w=is&k=20&c=noXz2rAPZXVRi6Qhs_FfHFBVv4qnFsKkkOMxfA6AxBY=" alt="Foto da Ração Premium para Gatos Castrados 3kg" width="300" height="200">
-      <p>
-        <strong>Descrição:</strong> Ração especialmente formulada para gatos castrados adultos.
-        Controla a ingestão de calorias e ajuda a prevenir a obesidade. Com taurina para saúde
-        do coração e Ômega-3 e 6 para pelagem saudável. Reduz a formação de bolas de pelo.
-        Embalagem: 3kg.
-      </p>
-      <p><strong>Valor: R$ 59,90</strong></p>
-    </section>
-
-    <hr>
-
-    <p><a href="index.html">Voltar para a página inicial</a></p>
-  </main>
-
-  <hr>
-
-  <footer>
-    <p><strong>PataFeliz Pet Shop</strong></p>
-    <p>Endereço: Rua dos Animais, 123 - Nova Iguaçu - RJ - CEP: 26000-000</p>
-    <p>Telefone: (21) 98765-4321 | E-mail: contato@patafeliz.com.br</p>
-    <p>Horário de funcionamento: Segunda a Sábado, das 08h às 18h</p>
-    <nav>
-      <a href="index.html">Início</a> |
-      <a href="acessorios.html">Acessórios</a> |
-      <a href="racoes.html">Rações</a> |
-      <a href="higiene.html">Higiene e Limpeza</a> |
-      <a href="servicos.html">Serviços</a> |
-      <a href="contato.html">Contato</a>
-    </nav>
-    <p>&copy; 2026 PataFeliz Pet Shop - Todos os direitos reservados.</p>
-    <p>Site desenvolvido por Emily Lemos - Projeto da Disciplina Fundamentos de Sistemas Web</p>
-  </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
