@@ -1,88 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Higiene e Limpeza - PataFeliz Pet Shop</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PataFeliz Pet Shop - Higiene e Limpeza</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Arquivo CSS Personalizado -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>PataFeliz Pet Shop</h1>
-    <p>Tudo o que seu pet precisa, com amor e cuidado!</p>
-    <p>Telefone: (21) 98765-4321 | contato@patafeliz.com.br | Nova Iguaçu - RJ</p>
+    <!-- Cabeçalho -->
+    <header class="container-fluid text-dark">
+        <h1 class="display-4 fw-bold">PataFeliz Pet Shop</h1>
+        <p class="lead">Tudo o que seu pet precisa, com amor e cuidado!</p>
+    </header>
 
-    <nav>
-      <a href="index.html">Início</a> |
-      <a href="acessorios.html">Acessórios</a> |
-      <a href="racoes.html">Rações</a> |
-      <a href="higiene.html">Higiene e Limpeza</a> |
-      <a href="servicos.html">Serviços</a> |
-      <a href="contato.html">Contato</a>
+    <!-- Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="acessorios.html">Acessórios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="racoes.html">Rações</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="higiene.html">Higiene e Limpeza</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <hr>
+    <main class="container my-5">
+        <h2 class="text-center mb-5">Higiene e Limpeza</h2>
 
-  <main>
-    <h2>Higiene e Limpeza para Pets</h2>
-    <p>Mantenha seu pet limpo e a sua casa sempre organizada com nossos produtos de higiene!</p>
+        <div class="row g-4 justify-content-center">
+            <!-- Produto 1 -->
+            <div class="col-md-5 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://media.istockphoto.com/id/2227156313/pt/foto/jack-russell-terrier-dog-sitting-on-a-hygienic-daily-diaper-for-pets.jpg?s=1024x1024&w=is&k=20&c=70LTJFm6z1Iece7AaPBYEIZMdXuI90Pu1e_amrmjqlo=" class="card-img-top" alt="Tapete higiênico para cães">
+                    <div class="card-body text-center">
+                        <h3 class="card-title h5">Tapete Higiênico - Pacote 30un</h3>
+                        <p class="card-text text-muted">Alta absorção e controle de odores para manter sua casa limpa.</p>
+                        <p class="h4 text-warning fw-bold">R$ 54,90</p>
+                        <button class="btn btn-warning w-100 mt-2">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
 
-    <hr>
+            <!-- Produto 2 -->
+            <div class="col-md-5 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://media.istockphoto.com/id/1407169076/pt/foto/back-view-of-fabric-period-diaper-pants-for-protection-on-french-bulldog-dog-o.jpg?s=1024x1024&w=is&k=20&c=hvSBNmH8D_1BxWWLV5z72HL7XuPzr2K_CQKiMmff1UI=" class="card-img-top" alt="Produtos de limpeza pet">
+                    <div class="card-body text-center">
+                        <h3 class="card-title h5">Fralda Descartável P - Pacote 12un</h3>
+                        <p class="card-text text-muted">Conforto e proteção para pets em viagens ou pós-operatório.</p>
+                        <p class="h4 text-warning fw-bold">R$ 32,90</p>
+                        <button class="btn btn-warning w-100 mt-2">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-    <section>
-      <h3>Tapete Higiênico para Cães - Pacote com 30 unidades</h3>
-      <img src="https://media.istockphoto.com/id/2227156313/pt/foto/jack-russell-terrier-dog-sitting-on-a-hygienic-daily-diaper-for-pets.jpg?s=1024x1024&w=is&k=20&c=70LTJFm6z1Iece7AaPBYEIZMdXuI90Pu1e_amrmjqlo=" alt="Foto do Tapete Higiênico para Cães pacote com 30 unidades" width="300" height="200">
-      <p>
-        <strong>Descrição:</strong> Tapete higiênico super absorvente para cães de todos os portes.
-        Com 5 camadas de proteção que absorvem até 2 litros. Possui camada antiderrapante e odor
-        neutralizante que elimina os cheiros desagradáveis. Ideal para filhotes em fase de
-        treinamento ou cães idosos. Tamanho: 60cm x 60cm. Pacote com 30 unidades.
-      </p>
-      <p><strong>Valor: R$ 54,90</strong></p>
-    </section>
+    <!-- Rodapé -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-1"><strong>PataFeliz Pet Shop</strong></p>
+            <p class="small">Rua dos Animais, 123 - Nova Iguaçu - RJ | CEP: 26000-000</p>
+            <p class="small">Telefone: (21) 98765-4321 | E-mail: contato@patafeliz.com.br</p>
+            <hr class="bg-light">
+            <p class="small mb-0">&copy; 2026 Desenvolvido por Emily Lemos - PUCRS</p>
+        </div>
+    </footer>
 
-    <hr>
-
-    <section>
-      <h3>Fralda Descartável para Cães - Tamanho P - Pacote com 12 unidades</h3>
-      <img src="https://media.istockphoto.com/id/1407169076/pt/foto/back-view-of-fabric-period-diaper-pants-for-protection-on-french-bulldog-dog-o.jpg?s=1024x1024&w=is&k=20&c=hvSBNmH8D_1BxWWLV5z72HL7XuPzr2K_CQKiMmff1UI=" alt="Foto da Fralda Descartável para Cães tamanho P" width="300" height="200">
-      <p>
-        <strong>Descrição:</strong> Fralda descartável para cães e gatos, ideal para fêmeas no
-        cio, animais com incontinência urinária ou recuperação pós-cirúrgica. Material macio e
-        confortável, com velcro ajustável para melhor adaptação ao corpo do animal. Altamente
-        absorvente e com proteção contra vazamentos. Tamanho P (peso do animal: 3 a 6kg).
-        Pacote com 12 unidades.
-      </p>
-      <p><strong>Valor: R$ 32,90</strong></p>
-    </section>
-
-    <hr>
-
-    <p><a href="index.html">Voltar para a página inicial</a></p>
-  </main>
-
-  <hr>
-
-  <footer>
-    <p><strong>PataFeliz Pet Shop</strong></p>
-    <p>Endereço: Rua dos Animais, 123 - Nova Iguaçu - RJ - CEP: 26000-000</p>
-    <p>Telefone: (21) 98765-4321 | E-mail: contato@patafeliz.com.br</p>
-    <p>Horário de funcionamento: Segunda a Sábado, das 08h às 18h</p>
-    <nav>
-      <a href="index.html">Início</a> |
-      <a href="acessorios.html">Acessórios</a> |
-      <a href="racoes.html">Rações</a> |
-      <a href="higiene.html">Higiene e Limpeza</a> |
-      <a href="servicos.html">Serviços</a> |
-      <a href="contato.html">Contato</a>
-    </nav>
-    <p>&copy; 2026 PataFeliz Pet Shop - Todos os direitos reservados.</p>
-    <p>Site desenvolvido por Emily Lemos - Projeto da Disciplina Fundamentos de Sistemas Web</p>
-  </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
