@@ -1,85 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Acessórios - PataFeliz Pet Shop</title>
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PataFeliz Pet Shop - Acessórios</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Arquivo CSS Personalizado -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>PataFeliz Pet Shop</h1>
-    <p>Tudo o que seu pet precisa, com amor e cuidado!</p>
-    <p>Telefone: (21) 98765-4321 | contato@patafeliz.com.br | Nova Iguaçu - RJ</p>
+    <!-- Cabeçalho -->
+    <header class="container-fluid text-dark">
+        <h1 class="display-4 fw-bold">PataFeliz Pet Shop</h1>
+        <p class="lead">Tudo o que seu pet precisa, com amor e cuidado!</p>
+    </header>
 
-    <nav>
-      <a href="index.html">Início</a> |
-      <a href="acessorios.html">Acessórios</a> |
-      <a href="racoes.html">Rações</a> |
-      <a href="higiene.html">Higiene e Limpeza</a> |
-      <a href="servicos.html">Serviços</a> |
-      <a href="contato.html">Contato</a>
+    <!-- Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="acessorios.html">Acessórios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="racoes.html">Rações</a></li>
+                    <li class="nav-item"><a class="nav-link" href="higiene.html">Higiene e Limpeza</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <hr>
+    <main class="container my-5">
+        <h2 class="text-center mb-5">Nossos Acessórios</h2>
 
-  <main>
-    <h2>Acessórios para Pets</h2>
-    <p>Encontre os melhores acessórios para deixar seu pet confortável e feliz!</p>
+        <div class="row g-4 justify-content-center">
+            <!-- Produto 1 -->
+            <div class="col-md-5 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://media.istockphoto.com/id/1306167086/pt/foto/beautiful-purebred-jack-russell-terrier.jpg?s=1024x1024&w=is&k=20&c=D5p4biFzucBxXZRy7uwzdi5nVAvKOwkfUGtPtmkF1z0=" class="card-img-top" alt="Cama Pet Confort de cor cinza">
+                    <div class="card-body text-center">
+                        <h3 class="card-title h5">Cama Pet Confort - Tamanho M</h3>
+                        <p class="card-text text-muted">Cama ultra macia e lavável, ideal para o descanso do seu pet.</p>
+                        <p class="h4 text-warning fw-bold">R$ 89,90</p>
+                        <button class="btn btn-warning w-100 mt-2">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
 
-    <hr>
+            <!-- Produto 2 -->
+            <div class="col-md-5 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://media.istockphoto.com/id/1511212016/pt/foto/set-of-dog-toys-isolated-on-white-collage.jpg?s=1024x1024&w=is&k=20&c=kAyl95dznG3xZfGy8egPlKjHTJKM3Uhh-t_wddNYpoY=" class="card-img-top" alt="Kit de brinquedos coloridos para pets">
+                    <div class="card-body text-center">
+                        <h3 class="card-title h5">Kit Brinquedos Interativos - 5 peças</h3>
+                        <p class="card-text text-muted">Diversão garantida com cordas, bolinhas e mordedores resistentes.</p>
+                        <p class="h4 text-warning fw-bold">R$ 45,00</p>
+                        <button class="btn btn-warning w-100 mt-2">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-    <section>
-      <h3>Cama Pet Confort - Tamanho M</h3>
-      <img src="https://media.istockphoto.com/id/1306167086/pt/foto/beautiful-purebred-jack-russell-terrier.jpg?s=1024x1024&w=is&k=20&c=D5p4biFzucBxXZRy7uwzdi5nVAvKOwkfUGtPtmkF1z0=" alt="Foto da Cama Pet Confort tamanho M" width="300" height="200">
-      <p>
-        <strong>Descrição:</strong> Cama super macia e confortável para cães e gatos de porte médio.
-        Confeccionada em tecido antialérgico e lavável. Enchimento em fibra sintética de alta qualidade.
-        Disponível nas cores bege, cinza e azul. Tamanho: 60cm x 45cm.
-      </p>
-      <p><strong>Valor: R$ 89,90</strong></p>
-    </section>
+    <!-- Rodapé -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-1"><strong>PataFeliz Pet Shop</strong></p>
+            <p class="small">Rua dos Animais, 123 - Nova Iguaçu - RJ | CEP: 26000-000</p>
+            <p class="small">Telefone: (21) 98765-4321 | E-mail: contato@patafeliz.com.br</p>
+            <hr class="bg-light">
+            <p class="small mb-0">&copy; 2026 Desenvolvido por Emily Lemos - PUCRS</p>
+        </div>
+    </footer>
 
-    <hr>
-
-    <section>
-      <h3>Kit Brinquedos Interativos - 9 peças</h3>
-      <img src="https://media.istockphoto.com/id/1511212016/pt/foto/set-of-dog-toys-isolated-on-white-collage.jpg?s=1024x1024&w=is&k=20&c=kAyl95dznG3xZfGy8egPlKjHTJKM3Uhh-t_wddNYpoY=" width="300" height="200">
-      <p>
-        <strong>Descrição:</strong> Kit completo com 9 brinquedos para estimular o seu pet.
-        Contém: cordas para puxar, brinquedo mordedor, bolinhas e Ossos de borracha.
-        Ideal para cães e gatos de qualquer porte. Material atóxico e seguro.
-      </p>
-      <p><strong>Valor: R$ 100,00</strong></p>
-    </section>
-
-    <hr>
-
-    <p><a href="index.html">Voltar para a página inicial</a></p>
-  </main>
-
-  <hr>
-
-  <footer>
-    <p><strong>PataFeliz Pet Shop</strong></p>
-    <p>Endereço: Rua dos Animais, 123 - Nova Iguaçu - RJ - CEP: 26000-000</p>
-    <p>Telefone: (21) 98765-4321 | E-mail: contato@patafeliz.com.br</p>
-    <p>Horário de funcionamento: Segunda a Sábado, das 08h às 18h</p>
-    <nav>
-      <a href="index.html">Início</a> |
-      <a href="acessorios.html">Acessórios</a> |
-      <a href="racoes.html">Rações</a> |
-      <a href="higiene.html">Higiene e Limpeza</a> |
-      <a href="servicos.html">Serviços</a> |
-      <a href="contato.html">Contato</a>
-    </nav>
-    <p>&copy; 2026 PataFeliz Pet Shop - Todos os direitos reservados.</p>
-    <p>Site desenvolvido por Emily Lemos - Projeto da Disciplina Fundamentos de Sistemas Web</p>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Arquivo JS Personalizado -->
     <script src="script.js"></script>
 </body>
 </html>
