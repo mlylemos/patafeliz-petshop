@@ -2,21 +2,10 @@
 
 ## Descrição do Projeto
 
-Este repositório contém o código-fonte do site do **PataFeliz Pet Shop**, desenvolvido como projeto da disciplina **Fundamentos de Sistemas Web**. O projeto foi atualizado para contemplar todos os requisitos da **Fase 2**, integrando design responsivo, interatividade e acessibilidade.
+Este repositório contém o código-fonte do site do **PataFeliz Pet Shop**, desenvolvido como projeto da disciplina **Fundamentos de Sistemas Web**. 
 
 ---
 
-## Novidades da Fase 2
-
-O sistema foi aprimorado com as seguintes tecnologias e funcionalidades para garantir uma melhor experiência ao usuário e atender aos critérios de avaliação:
-
-- **Design Responsivo e Moderno:** Integração com o framework **Bootstrap 5** e CSS personalizado (`style.css`), garantindo que o site se adapte perfeitamente a dispositivos móveis e desktops.
-- **Interatividade com JavaScript:** Implementação de funções dinâmicas (`script.js`), incluindo uma saudação temporal na página inicial que se adapta ao horário do dia, e validação de formulários em tempo real.
-- **Carrossel de Imagens:** Adição de um carrossel dinâmico na página inicial para destacar promoções e serviços da semana.
-- **Formulário de Cadastro e Agendamento:** A página de contato agora conta com um formulário completo para cadastro de clientes (com validação de dados, botões de rádio e checkboxes) e de pets. Inclui também um sistema de agendamento de serviços (Banho e Tosa) com opções de tele-busca ou entrega no local, utilizando campos de calendário para data e hora.
-- **Acessibilidade:** O site foi adaptado para ser mais inclusivo. Todas as imagens possuem o atributo `alt` com audiodescrição detalhada para leitores de tela, e a estrutura HTML utiliza tags semânticas adequadas.
-
----
 
 ## Estrutura de Páginas
 
@@ -30,6 +19,49 @@ O sistema foi aprimorado com as seguintes tecnologias e funcionalidades para gar
 | `contato.html` | Informações de contato, horário de funcionamento e o novo formulário de agendamento. |
 | `style.css` | Arquivo de estilos em cascata contendo a identidade visual do projeto. |
 | `script.js` | Arquivo de scripts contendo as funções de interatividade e validação. |
+
+---
+
+
+## Funcionalidades do Sistema
+
+### Página Inicial (`index.html`)
+- Apresentação do petshop com nome, slogan e informações de contato
+- Menu de navegação para todas as páginas
+- Lista das categorias de produtos e serviços disponíveis
+- Diferenciais do petshop
+- Rodapé com informações legais e de contato
+
+### Página de Acessórios (`acessorios.html`)
+- Exibe 2 produtos da categoria Acessórios:
+  1. **Cama Pet Confort - Tamanho M** - R$ 89,90
+  2. **Kit Brinquedos Interativos - 5 peças** - R$ 45,00
+- Cada produto possui: foto, descrição detalhada e valor
+
+### Página de Rações (`racoes.html`)
+- Exibe 2 produtos da categoria Rações:
+  1. **Ração Premium Cães Adultos - 15kg** - R$ 149,90
+  2. **Ração Premium Gatos Castrados - 3kg** - R$ 79,90
+- Cada produto possui: foto, descrição detalhada e valor
+
+### Página de Higiene e Limpeza (`higiene.html`)
+- Exibe 2 produtos da categoria Higiene e Limpeza:
+  1. **Tapete Higiênico - Pacote 30un** - R$ 54,90
+  2. **Fralda Descartável Tamanho P - Pacote 12un** - R$ 32,90
+- Cada produto possui: foto, descrição detalhada e valor
+
+### Página de Serviços (`servicos.html`)
+- Exibe os 2 serviços oferecidos pelo petshop:
+  1. **Banho e Tosa sem Tele-busca** - com tabela de preços por porte
+  2. **Banho e Tosa com Tele-busca** - com tabela de preços por porte
+- Cada serviço possui: foto, descrição e valores
+
+### Página de Contato (`contato.html`)
+- Endereço completo do petshop
+- Telefone e WhatsApp
+- E-mail com link clicável
+- Horário de funcionamento
+- Informações sobre agendamento
 
 ---
 
