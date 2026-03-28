@@ -1,77 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PataFeliz Pet Shop</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PataFeliz Pet Shop - Início</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Arquivo CSS Personalizado -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>PataFeliz Pet Shop</h1>
-    <p>Tudo o que seu pet precisa, com amor e cuidado!</p>
-    <p>Telefone: (21) 98765-4321 | contato@patafeliz.com.br | Nova Iguaçu - RJ</p>
 
-    <nav>
-      <a href="index.html">Início</a> |
-      <a href="acessorios.html">Acessórios</a> |
-      <a href="racoes.html">Rações</a> |
-      <a href="higiene.html">Higiene e Limpeza</a> |
-      <a href="servicos.html">Serviços</a> |
-      <a href="contato.html">Contato</a>
+    <!-- Cabeçalho -->
+    <header class="container-fluid text-dark">
+        <h1 class="display-4 fw-bold">PataFeliz Pet Shop</h1>
+        <p class="lead">Tudo o que seu pet precisa, com amor e cuidado!</p>
+        <p id="saudacao-dinamica" class="fw-bold text-primary"></p>
+    </header>
+
+    <!-- Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="acessorios.html">Acessórios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="racoes.html">Rações</a></li>
+                    <li class="nav-item"><a class="nav-link" href="higiene.html">Higiene e Limpeza</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <hr>
+    <main class="container my-5">
+        <!-- Carrossel de Imagens (Requisito Fase 2) -->
+        <section id="destaques" class="mb-5">
+            <h2 class="text-center mb-4">Destaques da Semana</h2>
+            <div id="carouselPet" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner rounded shadow">
+                    <div class="carousel-item active">
+                        <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=1200&h=400" class="d-block w-100" alt="Cachorro feliz recebendo carinho">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                            <h5>Bem-vindo ao PataFeliz!</h5>
+                            <p>O melhor atendimento para o seu melhor amigo.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=1200&h=400" class="d-block w-100" alt="Gato brincando com acessórios">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                            <h5>Acessórios Exclusivos</h5>
+                            <p>Confira nossa nova linha de camas e brinquedos.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPet" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselPet" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
 
-  <main>
-    <h2>Bem-vindo ao PataFeliz!</h2>
-    <p>
-      Somos um petshop dedicado a oferecer os melhores produtos e serviços para o seu animal de estimação.
-      Confira nossas categorias e cuide bem do seu pet!
-    </p>
+        <!-- Categorias -->
+        <section class="row text-center">
+            <h2 class="mb-4">Nossas Categorias</h2>
+            <div class="col-md-4 mb-3">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title h5">Acessórios</h3>
+                        <p class="card-text">Roupas, brinquedos e camas confortáveis.</p>
+                        <a href="acessorios.html" class="btn btn-outline-warning">Ver Produtos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title h5">Rações</h3>
+                        <p class="card-text">Nutrição de alta qualidade para todas as raças.</p>
+                        <a href="racoes.html" class="btn btn-outline-warning">Ver Produtos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title h5">Higiene</h3>
+                        <p class="card-text">Tudo para manter seu pet limpo e saudável.</p>
+                        <a href="higiene.html" class="btn btn-outline-warning">Ver Produtos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <h3>Nossas Categorias</h3>
+    <!-- Rodapé -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-1"><strong>PataFeliz Pet Shop</strong></p>
+            <p class="small">Rua dos Animais, 123 - Nova Iguaçu - RJ | CEP: 26000-000</p>
+            <p class="small">Telefone: (21) 98765-4321 | E-mail: contato@patafeliz.com.br</p>
+            <hr class="bg-light">
+            <p class="small mb-0">&copy; 2026 Desenvolvido por Emily Lemos - PUCRS</p>
+        </div>
+    </footer>
 
-    <ul>
-      <li><a href="acessorios.html">Acessórios</a> - Roupas, brinquedos, camas e muito mais</li>
-      <li><a href="racoes.html">Rações</a> - Rações não perecíveis para todas as espécies</li>
-      <li><a href="higiene.html">Higiene e Limpeza</a> - Tapetes higiênicos, fraldas e produtos de limpeza</li>
-      <li><a href="servicos.html">Serviços</a> - Banho, tosa e tele-busca</li>
-    </ul>
-
-    <h3>Destaques da Semana</h3>
-    <p>Visite nossas páginas de produtos e confira as novidades e promoções!</p>
-
-    <h3>Por que escolher o PataFeliz?</h3>
-    <ul>
-      <li>Atendimento personalizado para cada pet</li>
-      <li>Produtos de qualidade com os melhores preços</li>
-      <li>Equipe especializada e apaixonada por animais</li>
-      <li>Serviço de tele-busca para maior comodidade</li>
-    </ul>
-  </main>
-
-  <hr>
-
-  <footer>
-    <p><strong>PataFeliz Pet Shop</strong></p>
-    <p>Endereço: Rua dos Animais, 123 - Nova Iguaçu - RJ - CEP: 26000-000</p>
-    <p>Telefone: (21) 98765-4321 | E-mail: contato@patafeliz.com.br</p>
-    <p>Horário de funcionamento: Segunda à Sábado, das 08h às 18h</p>
-    <nav>
-      <a href="index.html">Início</a> |
-      <a href="acessorios.html">Acessórios</a> |
-      <a href="racoes.html">Rações</a> |
-      <a href="higiene.html">Higiene e Limpeza</a> |
-      <a href="servicos.html">Serviços</a> |
-      <a href="contato.html">Contato</a>
-    </nav>
-    <p>&copy; 2026 PataFeliz Pet Shop - Todos os direitos reservados.</p>
-    <p>Site desenvolvido por Emily Lemos - Projeto da Disciplina Fundamentos de Sistemas Web</p>
-  </footer>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Arquivo JS Personalizado -->
     <script src="script.js"></script>
 </body>
 </html>
