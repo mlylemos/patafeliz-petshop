@@ -1,80 +1,182 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato - PataFeliz Pet Shop</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PataFeliz Pet Shop - Contato e Agendamento</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>PataFeliz Pet Shop</h1>
-    <p>Tudo o que seu pet precisa, com amor e cuidado!</p>
-    <p>Telefone: (21) 98765-4321 | contato@patafeliz.com.br | Nova Iguaçu - RJ</p>
+    <!-- Cabeçalho -->
+    <header class="container-fluid text-dark">
+        <h1 class="display-4 fw-bold">PataFeliz Pet Shop</h1>
+        <p class="lead">Tudo o que seu pet precisa, com amor e cuidado!</p>
+    </header>
 
-    <nav>
-      <a href="index.html">Início</a> |
-      <a href="acessorios.html">Acessórios</a> |
-      <a href="racoes.html">Rações</a> |
-      <a href="higiene.html">Higiene e Limpeza</a> |
-      <a href="servicos.html">Serviços</a> |
-      <a href="contato.html">Contato</a>
+    <!-- Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="acessorios.html">Acessórios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="racoes.html">Rações</a></li>
+                    <li class="nav-item"><a class="nav-link" href="higiene.html">Higiene e Limpeza</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <hr>
+    <main class="container my-5">
+        <div class="row">
+            <!-- Informações de Contato -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h2 class="h4 mb-4">Informações de Contato</h2>
+                        <p><strong>Endereço:</strong> Rua dos Animais, 123 - Nova Iguaçu - RJ</p>
+                        <p><strong>Telefone / WhatsApp:</strong> (21) 98765-4321</p>
+                        <p><strong>E-mail:</strong> <a href="mailto:contato@patafeliz.com.br">contato@patafeliz.com.br</a></p>
+                        <hr>
+                        <h3 class="h5">Horário de Funcionamento</h3>
+                        <ul class="list-unstyled">
+                            <li>Segunda a Sexta: 08h00 às 18h00</li>
+                            <li>Sábado: 08h00 às 14h00</li>
+                            <li>Domingo e Feriados: Fechado</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-  <main>
-    <h2>Entre em Contato</h2>
-    <p>Estamos prontos para atender você e seu pet! Fale conosco pelos canais abaixo:</p>
+            <!-- Formulário de Cadastro e Agendamento (Requisito Fase 2) -->
+            <div class="col-md-8">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="h4 mb-4">Cadastro e Agendamento de Serviços</h2>
+                        <form id="form-agendamento" class="needs-validation" novalidate>
+                            
+                            <!-- Dados do Cliente -->
+                            <h3 class="h6 text-primary border-bottom pb-2 mb-3">Dados do Cliente</h3>
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-6">
+                                    <label for="nomeCliente" class="form-label">Nome Completo</label>
+                                    <input type="text" class="form-control" id="nomeCliente" placeholder="Digite seu nome" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="cpfCliente" class="form-label">CPF</label>
+                                    <input type="text" class="form-control" id="cpfCliente" placeholder="000.000.000-00" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="enderecoCliente" class="form-label">Endereço</label>
+                                    <input type="text" class="form-control" id="enderecoCliente" placeholder="Rua, número, bairro" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label d-block">Sexo</label>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="sexo" id="sexoM" value="M" required>
+                                        <label class="form-check-label" for="sexoM">Masculino</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="sexo" id="sexoF" value="F">
+                                        <label class="form-check-label" for="sexoF">Feminino</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="telCliente" class="form-label">Telefone</label>
+                                    <input type="tel" class="form-control" id="telCliente" placeholder="(21) 99999-9999" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="emailCliente" class="form-label">E-mail</label>
+                                    <input type="email" class="form-control" id="emailCliente" placeholder="exemplo@email.com" required>
+                                </div>
+                            </div>
 
-    <hr>
+                            <!-- Dados do Pet -->
+                            <h3 class="h6 text-primary border-bottom pb-2 mb-3">Dados do Pet</h3>
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-5">
+                                    <label for="nomePet" class="form-label">Nome do Pet</label>
+                                    <input type="text" class="form-control" id="nomePet" placeholder="Nome do seu amiguinho" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="racaPet" class="form-label">Raça</label>
+                                    <input type="text" class="form-control" id="racaPet" placeholder="Ex: Poodle, SRD" required>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="idadePet" class="form-label">Idade (anos)</label>
+                                    <input type="number" class="form-control" id="idadePet" min="0" max="30" required>
+                                </div>
+                            </div>
 
-    <h3>Informações de Contato</h3>
+                            <!-- Agendamento -->
+                            <h3 class="h6 text-primary border-bottom pb-2 mb-3">Agendamento de Serviço</h3>
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-6">
+                                    <label for="servico" class="form-label">Serviço Desejado</label>
+                                    <select class="form-select" id="servico" required>
+                                        <option value="" selected disabled>Escolha o serviço...</option>
+                                        <option value="banho">Banho</option>
+                                        <option value="tosa">Tosa</option>
+                                        <option value="banho_tosa">Banho e Tosa</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="metodo" class="form-label">Método de Entrega</label>
+                                    <select class="form-select" id="metodo" required>
+                                        <option value="" selected disabled>Escolha o método...</option>
+                                        <option value="local">Entrega no Local</option>
+                                        <option value="tele">Tele-busca (Agendada)</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="dataAgendamento" class="form-label">Data</label>
+                                    <input type="date" class="form-control" id="dataAgendamento" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="horaAgendamento" class="form-label">Horário</label>
+                                    <input type="time" class="form-control" id="horaAgendamento" required>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="termos" required>
+                                        <label class="form-check-label" for="termos">
+                                            Estou ciente dos horários de funcionamento.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
 
-    <p><strong>Endereço:</strong> Rua dos Animais, 123 - Nova Iguaçu - RJ - CEP: 26000-000</p>
-    <p><strong>Telefone / WhatsApp:</strong> (21) 98765-4321</p>
-    <p><strong>E-mail:</strong> <a href="mailto:contato@patafeliz.com.br">contato@patafeliz.com.br</a></p>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-warning btn-lg fw-bold">Confirmar Agendamento</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-    <h3>Horário de Funcionamento</h3>
-    <ul>
-      <li>Segunda a Sexta: 08h00 às 18h00</li>
-      <li>Sábado: 08h00 às 14h00</li>
-      <li>Domingo e Feriados: Fechado</li>
-    </ul>
+    <!-- Rodapé -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-1"><strong>PataFeliz Pet Shop</strong></p>
+            <p class="small">Rua dos Animais, 123 - Nova Iguaçu - RJ | CEP: 26000-000</p>
+            <p class="small">Telefone: (21) 98765-4321 | E-mail: contato@patafeliz.com.br</p>
+            <hr class="bg-light">
+            <p class="small mb-0">&copy; 2026 Desenvolvido por Emily Lemos - PUCRS</p>
+        </div>
+    </footer>
 
-    <h3>Agendamento de Serviços</h3>
-    <p>
-      Para agendar banho, tosa ou tele-busca, entre em contato pelo telefone ou WhatsApp
-      <strong>(21) 98765-4321</strong> ou envie um e-mail para
-      <a href="mailto:contato@patafeliz.com.br">contato@patafeliz.com.br</a>.
-    </p>
-    <p>Atendemos de segunda a sábado, no horário de funcionamento.</p>
-
-    <hr>
-
-    <p><a href="servicos.html">Ver nossos serviços</a></p>
-    <p><a href="index.html">Voltar para a página inicial</a></p>
-  </main>
-
-  <hr>
-
-  <footer>
-    <p><strong>PataFeliz Pet Shop</strong></p>
-    <p>Endereço: Rua dos Animais, 123 - Nova Iguaçu - RJ - CEP: 26000-000</p>
-    <p>Telefone: (21) 98765-4321 | E-mail: contato@patafeliz.com.br</p>
-    <p>Horário de funcionamento: Segunda a Sábado, das 08h às 18h</p>
-    <nav>
-      <a href="index.html">Início</a> |
-      <a href="acessorios.html">Acessórios</a> |
-      <a href="racoes.html">Rações</a> |
-      <a href="higiene.html">Higiene e Limpeza</a> |
-      <a href="servicos.html">Serviços</a> |
-      <a href="contato.html">Contato</a>
-    </nav>
-    <p>&copy; 2026 PataFeliz Pet Shop - Todos os direitos reservados.</p>
-    <p>Site desenvolvido por Emily Lemos - Projeto da Disciplina Fundamentos de Sistemas Web</p>
-  </footer>
-
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
